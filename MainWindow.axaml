@@ -1,0 +1,129 @@
+
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="TicTacToeGUI.MainWindow"
+        Title="Tic-Tac-Toe"
+        Width="400"
+        Height="500"
+        Background="#1E293B">
+
+    <StackPanel Margin="25" Spacing="20">
+
+        <!-- Spelets rubrik -->
+        <TextBlock Text="Tic-Tac-Toe"
+                   FontSize="30"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   HorizontalAlignment="Center"/>
+
+        <!-- Visar vems tur det är -->
+        <TextBlock x:Name="StatusText"
+                   Text="Spelare X:s tur"
+                   FontSize="20"
+                   Foreground="#38BDF8"
+                   HorizontalAlignment="Center"/>
+
+        <!-- Spelplan med 9 knappar -->
+        <UniformGrid Rows="3"
+                     Columns="3"
+                     Height="300"
+                     ColumnSpacing="6"
+                     RowSpacing="6">
+
+            <!-- Översta raden -->
+            <Button Tag="6" Click="Spela"
+                    FontSize="40"
+                    Background="#40516B"
+                    Foreground="White"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"/>
+
+            <Button Tag="7" Click="Spela"
+                    FontSize="40"
+                    Background="#40516B"
+                    Foreground="White"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"/>
+
+            <Button Tag="8" Click="Spela"
+                    FontSize="40"
+                    Background="#40516B"
+                    Foreground="White"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"/>
+
+            <!-- Mittenraden -->
+            <Button Tag="3" Click="Spela"
+                    FontSize="40"
+                    Background="#40516B"
+                    Foreground="White"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"/>
+
+            <Button Tag="4" Click="Spela"
+                    FontSize="40"
+                    Background="#40516B"
+                    Foreground="White"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"/>
+
+            <Button Tag="5" Click="Spela"
+                    FontSize="40"
+                    Background="#40516B"
+                    Foreground="White"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"/>
+
+            <!-- Nedersta raden -->
+            <Button Tag="0" Click="Spela"
+                    FontSize="40"
+                    Background="#40516B"
+                    Foreground="White"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"/>
+
+            <Button Tag="1" Click="Spela"
+                    FontSize="40"
+                    Background="#40516B"
+                    Foreground="White"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"/>
+
+            <Button Tag="2" Click="Spela"
+                    FontSize="40"
+                    Background="#40516B"
+                    Foreground="White"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"/>
+
+        </UniformGrid>
+
+        <!-- Knapp för att börja om -->
+        <Button Content="Spela igen"
+                Click="StartaOm"
+                FontSize="18"
+                Padding="20,10"
+                Background="#0284C7"
+                Foreground="White"
+                HorizontalAlignment="Center"/>
+
+    </StackPanel>
+</Window>
